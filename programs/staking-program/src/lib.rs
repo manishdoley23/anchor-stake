@@ -33,7 +33,7 @@ pub struct Initialize<'info> {
 
     #[account(
         init_if_needed,
-        seeds = [constants::VAULT_SEED]
+        seeds = [constants::VAULT_SEED],
         bump,
         payer = signer,
         token::mint = mint,
